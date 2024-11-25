@@ -41,6 +41,7 @@ function Features() {
         <span className="feature__subtitle">Compared to last month</span>
       </div>
     </div>
+    
   );
 }
 

@@ -1,10 +1,12 @@
-import React from 'react'
-import Features from '../../components/Features/Features'
+import React from "react";
+import Features from "../../components/Features/Features";
 
 function Home() {
   return (
-    <Features />
-  )
+    <diV className="home">
+      <Features />
+    </diV>
+  );
 }
 
-export default Home
+export default Home;
