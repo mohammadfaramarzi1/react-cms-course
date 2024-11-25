@@ -48,3 +48,5 @@ let xAxisData = [
     sale: 73_000,
   },
 ];
+
+export { xAxisData };
