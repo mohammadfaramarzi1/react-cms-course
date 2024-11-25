@@ -35,7 +35,7 @@ function Features() {
           <span className="feature__money">$2,225</span>
           <span className="feature__rate">
             +2.4
-            <ArrowUpwardIcon className="feature__icon positive" />
+            <ArrowUpwardIcon className="feature__icon" />
           </span>
         </div>
         <span className="feature__subtitle">Compared to last month</span>
