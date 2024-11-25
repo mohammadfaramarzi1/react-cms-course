@@ -11,7 +11,7 @@ function SideBar() {
             <div className="sidebar__menu">
                 <h3 className='sidebar__title'>Dashboard</h3>
                 <ul className='sidebar__list'>
-                    <li className='sidebar__list-item'>
+                    <li className='sidebar__list-item active'>
                         <LineStyleIcon className="sidebar__icon" />
                         Home
                     </li>
