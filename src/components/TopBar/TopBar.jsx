@@ -10,7 +10,7 @@ function TopBar() {
     <div className="topbar">
       <div className="topbar-wrapper">
         <div className="topbar-left">
-          <span className="logo">CMS ❤️</span>
+          <span className="logo">CMS 💙</span>
         </div>
         <div className="topbar-right">
           <div className="topbar-icon-container">
@@ -26,6 +26,7 @@ function TopBar() {
           </div>
           <img
             src="images/5886539613504389703.jpg"
+            className="topbar-img"
           />
         </div>
       </div>
