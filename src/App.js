@@ -1,6 +1,8 @@
 import { useRoutes } from "react-router-dom";
 import routes from "./routes";
 import TopBar from "./components/TopBar/TopBar";
+import SideBar from "./components/SideBar/SideBar";
+import "./App.css"
 
 function App() {
   const router = useRoutes(routes);
@@ -8,7 +10,10 @@ function App() {
   return (
     <>
       <TopBar />
-      {router}
+      <div className="container">
+        <SideBar />
+        {router}
+      </div>
     </>
   );
 }
