@@ -1,14 +1,14 @@
 import { useRoutes } from "react-router-dom";
 import routes from "./routes";
+import TopBar from "./components/TopBar/TopBar";
 
 function App() {
-
-  const router = useRoutes(routes)
+  const router = useRoutes(routes);
 
   return (
     <>
+      <TopBar />
       {router}
-
     </>
   );
 }
