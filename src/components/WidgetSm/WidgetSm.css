@@ -1,62 +1,67 @@
 .widgetsm {
-    margin: 20px;
-    padding: 20px;
-    margin-right: 20px;
-    box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
+  margin: 20px;
+  padding: 20px;
+  margin-right: 20px;
+  box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
 }
 
 .widgetsm__title {
-    font-size: 22px;
-    font-weight: 600;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .widgetsm__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0px;
+  margin: 0;
+  padding: 0;
+}
+
+.widgetsm__list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
 }
 
 .widgetsm__img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  object-fit: cover;
 }
 
 .widgetsm__user {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .widgetsm__username {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .widgetsm__user-title {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .widgetsm__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    padding: 7px 10px;
-    background-color: #eeeef7;
-    color: #555;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 7px 10px;
+  background-color: #eeeef7;
+  color: #555;
+  cursor: pointer;
 }
 
 .widgetsm__icon {
-    font-size: 16px !important;
+  font-size: 16px !important;
 }

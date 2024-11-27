@@ -49,4 +49,37 @@ let xAxisData = [
   },
 ];
 
-export { xAxisData };
+let newMembers = [
+  {
+    id: 1,
+    username: "Mohammad Faramarzi",
+    title: "Front-End Developer",
+    images: "images/5886539613504389703.jpg",
+  },
+  {
+    id: 2,
+    username: "Reza Rastegari",
+    title: "Back-End Developer",
+    images: "images/5886539613504389703.jpg",
+  },
+  {
+    id: 3,
+    username: "Taha Haghi",
+    title: "Front-End Developer",
+    images: "images/5886539613504389703.jpg",
+  },
+  {
+    id: 4,
+    username: "Hasan Jafari",
+    title: "Hacker",
+    images: "images/5886539613504389703.jpg",
+  },
+  {
+    id: 5,
+    username: "Ehsan Fallah",
+    title: "SEO",
+    images: "images/5886539613504389703.jpg",
+  },
+];
+
+export { xAxisData, newMembers };
