@@ -1,5 +1,7 @@
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
+import "./WidgetSm.css"
+
 function WidgetSm() {
   return (
     <div className="widgetsm">
