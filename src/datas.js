@@ -82,4 +82,35 @@ let newMembers = [
   },
 ];
 
-export { xAxisData, newMembers };
+const transactions = [
+  {
+    id: 1,
+    username: "Hasan Vaziri",
+    date: "2 May 2024",
+    amount: "$199.23",
+    status: "Approved",
+  },
+  {
+    id: 2,
+    username: "Morteza Safati",
+    date: "2 Aug 2024",
+    amount: "$189.23",
+    status: "Declined",
+  },
+  {
+    id: 3,
+    username: "Ehsan Dadashi",
+    date: "15 Sep 2024",
+    amount: "$199.23",
+    status: "Pending",
+  },
+  {
+    id: 4,
+    username: "Hasan Vaziri",
+    date: "25 Jan 2024",
+    amount: "$199.23",
+    status: "Declined",
+  },
+];
+
+export { xAxisData, newMembers, transactions };
