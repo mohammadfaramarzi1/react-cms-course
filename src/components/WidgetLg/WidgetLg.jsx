@@ -1,9 +1,34 @@
-import "./WidgetLg.css"
+import "./WidgetLg.css";
 
 function WidgetLg() {
+  const Button = ({ type }) => {
+    return <button className={`widgetlg__button-${type}`}>{type}</button>;
+  };
+
   return (
-    <div>WidgetLg</div>
-  )
+    <div className="widgetlg">
+      <h3 className="widgetlg__title">Latest Transactions</h3>
+      <table className="widgetlg__table">
+        <tr className="widgetlg__table-tr">
+          <th className="widgetlg__table-th">Customer</th>
+          <th className="widgetlg__table-th">Date</th>
+          <th className="widgetlg__table-th">Amount</th>
+          <th className="widgetlg__table-th">Status</th>
+        </tr>
+        <tr className="widgetlg__table-tr">
+          <td className="widgetlg__user">
+            <img src="images/5886539613504389703.jpg" alt="" />
+            <span className="widgetlg__name">Hasan Vaziri</span>
+          </td>
+          <td className="widgetlg__date">2 May 2024</td>
+          <td className="widgetlg__amount">$199.29</td>
+          <td className="widgetlg__status">
+            <Button type="Approved" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  );
 }
 
-export default WidgetLg
+export default WidgetLg;
