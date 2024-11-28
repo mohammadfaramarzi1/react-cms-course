@@ -5,6 +5,8 @@ import { xAxisData } from "../../datas";
 import WidgetSm from "../../components/WidgetSm/WidgetSm";
 import WidgetLg from "../../components/WidgetLg/WidgetLg";
 
+import "./Home.css"
+
 function Home() {
   return (
     <diV className="home">
