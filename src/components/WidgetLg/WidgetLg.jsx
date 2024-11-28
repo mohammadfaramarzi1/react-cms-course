@@ -1,9 +1,19 @@
+import { transactions } from "../../datas";
+
 import "./WidgetLg.css";
 
 function WidgetLg() {
   const Button = ({ type }) => {
-    return <button className={`widgetlg__button widgetlg__button-${type.toLowerCase()}`}>{type}</button>;
+    return (
+      <button
+        className={`widgetlg__button widgetlg__button-${type.toLowerCase()}`}
+      >
+        {type}
+      </button>
+    );
   };
+
+  console.log(transactions);
 
   return (
     <div className="widgetlg">
@@ -16,54 +26,23 @@ function WidgetLg() {
           <th className="widgetlg__table-th">Status</th>
         </tr>
 
-        <tr className="widgetlg__table-tr">
-          <td className="widgetlg__user">
-            <img src="images/5886539613504389703.jpg" className="widgetlg__img" alt="widget profile" />
-            <span className="widgetlg__name">Hasan Vaziri</span>
-          </td>
-          <td className="widgetlg__date">2 May 2024</td>
-          <td className="widgetlg__amount">$199.29</td>
-          <td className="widgetlg__status">
-            <Button type="Approved" />
-          </td>
-        </tr>
-
-        <tr className="widgetlg__table-tr">
-          <td className="widgetlg__user">
-            <img src="images/5886539613504389703.jpg" className="widgetlg__img" alt="widget profile" />
-            <span className="widgetlg__name">Morteza Safati</span>
-          </td>
-          <td className="widgetlg__date">2 May 2024</td>
-          <td className="widgetlg__amount">$199.29</td>
-          <td className="widgetlg__status">
-            <Button type="Declined" />
-          </td>
-        </tr>
-
-        <tr className="widgetlg__table-tr">
-          <td className="widgetlg__user">
-            <img src="images/5886539613504389703.jpg" className="widgetlg__img" alt="widget profile" />
-            <span className="widgetlg__name">Ehsan Dadashi</span>
-          </td>
-          <td className="widgetlg__date">2 May 2024</td>
-          <td className="widgetlg__amount">$199.29</td>
-          <td className="widgetlg__status">
-            <Button type="Pending" />
-          </td>
-        </tr>
-
-        <tr className="widgetlg__table-tr">
-          <td className="widgetlg__user">
-            <img src="images/5886539613504389703.jpg" className="widgetlg__img" alt="widget profile" />
-            <span className="widgetlg__name">Mohsen Rezaei</span>
-          </td>
-          <td className="widgetlg__date">2 May 2024</td>
-          <td className="widgetlg__amount">$199.29</td>
-          <td className="widgetlg__status">
-            <Button type="Declined" />
-          </td>
-        </tr>
-
+        {transactions.map((transaction) => (
+          <tr className="widgetlg__table-tr" key={transaction.id}>
+            <td className="widgetlg__user">
+              <img
+                src="images/5886539613504389703.jpg"
+                className="widgetlg__img"
+                alt="widget profile"
+              />
+              <span className="widgetlg__name">{transaction.username}</span>
+            </td>
+            <td className="widgetlg__date">{transaction.date}</td>
+            <td className="widgetlg__amount">{transaction.amount}</td>
+            <td className="widgetlg__status">
+              <Button type={transaction.status} />
+            </td>
+          </tr>
+        ))}
       </table>
     </div>
   );
