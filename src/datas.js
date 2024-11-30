@@ -113,4 +113,42 @@ const transactions = [
   },
 ];
 
-export { xAxisData, newMembers, transactions };
+const userRows = [
+  {
+    id: 1,
+    username: "Mohammad Faramarzi",
+    avatar: "images/5886539613504389703.jpg",
+    status: "active",
+    transaction: "$216",
+  },
+  {
+    id: 2,
+    username: "Mohammad Yari",
+    avatar: "images/5886539613504389703.jpg",
+    status: "active",
+    transaction: "$65.69",
+  },
+  {
+    id: 3,
+    username: "Mohsen Nazari",
+    avatar: "images/5886539613504389703.jpg",
+    status: "inactive",
+    transaction: "$336.85",
+  },
+  {
+    id: 4,
+    username: "Kamran Fadaei",
+    avatar: "images/5886539613504389703.jpg",
+    status: "active",
+    transaction: "$21",
+  },
+  {
+    id: 5,
+    username: "Taha Babaei",
+    avatar: "images/5886539613504389703.jpg",
+    status: "active",
+    transaction: "$99.69",
+  },
+];
+
+export { xAxisData, newMembers, transactions, userRows };
