@@ -1,15 +1,15 @@
-.userlist {
+.productlist {
   flex: 4;
   padding: 0 30px;
   margin-top: 25px;
 }
 
-.userlist__user {
+.productlist__product {
   display: flex;
   align-items: center;
 }
 
-.userlist__img {
+.productlist__img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -21,7 +21,7 @@
   object-fit: cover;
 }
 
-.userlist__edit {
+.productlist__edit {
   border: none;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -35,7 +35,7 @@
   cursor: pointer;
 }
 
-.userlist__delete {
+.productlist__delete {
   color: red;
   cursor: pointer;
 }

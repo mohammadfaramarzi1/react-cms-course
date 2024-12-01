@@ -31,11 +31,11 @@ function Products() {
       renderCell: (params) => {
         return (
           <Link to={`/product/${params.row.id}`} className="link">
-            <div className="userlist__user">
+            <div className="productlist__product">
               <img
                 src={params.row.avatar}
-                alt="user"
-                className="userlist__img"
+                alt="product"
+                className="productlist__img"
               />
               {params.row.title}
             </div>
@@ -55,10 +55,10 @@ function Products() {
         return (
           <>
             <Link to={`/product/${params.row.id}`} className="link">
-              <button className="userlist__edit">Edit</button>
+              <button className="productlist__edit">Edit</button>
             </Link>
             <DeleteOutlineIcon
-              className="userlist__delete"
+              className="productlist__delete"
               onClick={() => productDelete(params.row.id)}
             />
           </>
@@ -69,7 +69,7 @@ function Products() {
   ];
 
   return (
-    <div className="userlist">
+    <div className="productlist">
       <DataGrid
         rows={products}
         columns={columns}
