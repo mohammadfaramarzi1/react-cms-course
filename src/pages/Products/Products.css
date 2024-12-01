@@ -1,7 +1,6 @@
 .productlist {
   flex: 4;
   padding: 0 30px;
-  margin-top: 25px;
 }
 
 .productlist__product {
