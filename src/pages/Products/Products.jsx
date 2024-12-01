@@ -2,16 +2,20 @@ import { useState } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 
-import { userRows } from "../../datas";
+import { products } from "../../datas";
 
 import "./Products.css";
 import { Link } from "react-router-dom";
 
 function Products() {
-  const [userDatas, setUserDatas] = useState(userRows);
+  const [productsDatas, setProductsDatas] = useState(products);
 
-  const userDelete = (userID) => {
-    setUserDatas(userDatas.filter((user) => user.id !== userID));
+  console.log("Products", productsDatas);
+
+  const productDelete = (productID) => {
+    setProductsDatas(
+      productsDatas.filter((product) => product.id !== productID)
+    );
   };
 
   const columns = [
@@ -21,32 +25,27 @@ function Products() {
       width: 90,
     },
     {
-      field: "user",
-      headerName: "User",
+      field: "title",
+      headerName: "Name",
       width: 200,
       renderCell: (params) => {
         return (
-          <Link to="/" className="link">
+          <Link to={`/product/${params.row.id}`} className="link">
             <div className="userlist__user">
               <img
                 src={params.row.avatar}
                 alt="user"
                 className="userlist__img"
               />
-              {params.row.username}
+              {params.row.title}
             </div>
           </Link>
         );
       },
     },
     {
-      field: "status",
-      headerName: "Status",
-      width: 90,
-    },
-    {
-      field: "transaction",
-      headerName: "Transaction",
+      field: "price",
+      headerName: "Price",
       width: 90,
     },
     {
@@ -55,12 +54,12 @@ function Products() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={`/user/${params.row.id}`} className="link">
+            <Link to={`/product/${params.row.id}`} className="link">
               <button className="userlist__edit">Edit</button>
             </Link>
             <DeleteOutlineIcon
               className="userlist__delete"
-              onClick={() => userDelete(params.row.id)}
+              onClick={() => productDelete(params.row.id)}
             />
           </>
         );
@@ -72,7 +71,7 @@ function Products() {
   return (
     <div className="userlist">
       <DataGrid
-        rows={userDatas}
+        rows={products}
         columns={columns}
         autoPageSize
         disableRowSelectionOnClick

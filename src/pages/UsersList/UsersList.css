@@ -1,6 +1,7 @@
 .userlist {
     flex: 4;
     padding: 0 30px;
+    margin-top: 25px;
 }
 
 .userlist__user {
