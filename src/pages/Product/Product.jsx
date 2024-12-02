@@ -20,7 +20,11 @@ function Product() {
         </div>
         <div className="product-top-right">
           <div className="product-info-top">
-            <img src="/images/dell.jpg" alt="product" className="product-info__img" />
+            <img
+              src="/images/dell.jpg"
+              alt="product"
+              className="product-info__img"
+            />
             <span className="product-info__name">Dell</span>
           </div>
           <div className="product-info-bottom">
@@ -46,6 +50,25 @@ function Product() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="product-bottom">
+        <form className="product__form">
+          <div className="product__form-left">
+            <label htmlFor="name">Product Name</label>
+            <input type="text" placeholder="Name" id="name" />
+            <label htmlFor="stock">In Stock</label>
+            <select name="stock" id="stock">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+            <label htmlFor="active">Active</label>
+            <select name="active" id="active">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div className="product__form-right"></div>
+        </form>
       </div>
     </div>
   );
