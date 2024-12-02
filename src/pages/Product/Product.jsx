@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+
+import Chart from "../../components/Chart/Chart"
+
 import "./Product.css";
 
 function Product() {
@@ -9,6 +12,12 @@ function Product() {
         <Link to="/newProduct" className="link">
           <button className="product__add-btn">Create</button>
         </Link>
+      </div>
+      <div className="product-top">
+        <div className="product-top-left">
+          <Chart title="Sale In Month" />
+        </div>
+        <div className="product-top-right"></div>
       </div>
     </div>
   );
