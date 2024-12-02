@@ -20,7 +20,7 @@ function Product() {
         </div>
         <div className="product-top-right">
           <div className="product-info-top">
-            <img src="./images/dell.jpg" alt="product" className="product-info__img" />
+            <img src="/images/dell.jpg" alt="product" className="product-info__img" />
             <span className="product-info__name">Dell</span>
           </div>
           <div className="product-info-bottom">
