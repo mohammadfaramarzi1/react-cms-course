@@ -1,12 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import Chart from "../../components/Chart/Chart";
-import { productsData } from "../../datas";
-import PublishIcon from "@mui/icons-material/Publish"
+import { productsData, products } from "../../datas";
+import PublishIcon from "@mui/icons-material/Publish";
 
 import "./Product.css";
 
 function Product() {
+  const { productID } = useParams();
+  const currentProductData = products.find(
+    (product) => product.id === +productID
+  );
+  console.log(currentProductData);
+
   return (
     <div className="product">
       <div className="product__title-container">
@@ -22,20 +28,24 @@ function Product() {
         <div className="product-top-right">
           <div className="product-info-top">
             <img
-              src="/images/dell.jpg"
+              src={`/${currentProductData.avatar}`}
               alt="product"
               className="product-info__img"
             />
-            <span className="product-info__name">Dell</span>
+            <span className="product-info__name">
+              {currentProductData.title} Laptop
+            </span>
           </div>
           <div className="product-info-bottom">
             <div className="product-info__item">
               <div className="product-info__key">ID:</div>
-              <div className="product-info__value">132</div>
+              <div className="product-info__value">{currentProductData.id}</div>
             </div>
             <div className="product-info__item">
               <div className="product-info__key">Name:</div>
-              <div className="product-info__value">Dell</div>
+              <div className="product-info__value">
+                {currentProductData.title} Laptop
+              </div>
             </div>
             <div className="product-info__item">
               <div className="product-info__key">Sales:</div>
@@ -70,11 +80,15 @@ function Product() {
           </div>
           <div className="product__form-right">
             <div className="product__uploader">
-              <img src="/images/dell.jpg" alt="profile img" className="product__uploader-img" />
+              <img
+                src={`/${currentProductData.avatar}`}
+                alt="profile img"
+                className="product__uploader-img"
+              />
               <label>
                 <PublishIcon />
               </label>
-              <input type="file" style={{display: "none"}} />
+              <input type="file" style={{ display: "none" }} />
             </div>
             <button className="product__btn">Upload</button>
           </div>

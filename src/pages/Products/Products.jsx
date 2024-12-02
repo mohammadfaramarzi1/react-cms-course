@@ -53,7 +53,7 @@ function Products() {
       headerName: "Action",
       renderCell: (params) => {
         return (
-          <>
+          <div style={{ display: "flex", alignItems: "center" }}>
             <Link to={`/product/${params.row.id}`} className="link">
               <button className="productlist__edit">Edit</button>
             </Link>
@@ -61,7 +61,7 @@ function Products() {
               className="productlist__delete"
               onClick={() => productDelete(params.row.id)}
             />
-          </>
+          </div>
         );
       },
       width: 120,

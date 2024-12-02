@@ -25,7 +25,7 @@ function TopBar() {
             <SettingsIcon />
           </div>
           <img
-            src="images/5886539613504389703.jpg"
+            src="/images/5886539613504389703.jpg"
             className="topbar-img"
             alt="user profile"
           />

@@ -54,7 +54,7 @@ function UsersList() {
       headerName: "Action",
       renderCell: (params) => {
         return (
-          <>
+          <div style={{ display: "flex", alignItems: "center" }}>
             <Link to={`/user/${params.row.id}`} className="link">
               <button className="userlist__edit">Edit</button>
             </Link>
@@ -62,7 +62,7 @@ function UsersList() {
               className="userlist__delete"
               onClick={() => userDelete(params.row.id)}
             />
-          </>
+          </div>
         );
       },
       width: 120,
