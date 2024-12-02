@@ -191,46 +191,13 @@ const productsData = [
     name: "Mar",
     sale: 2700,
   },
-  {
-    name: "Apr",
-    sale: 2000,
-  },
-  {
-    name: "May",
-    sale: 4000,
-  },
-  {
-    name: "Jun",
-    sale: 4000,
-  },
-  {
-    name: "Jan",
-    sale: 5000,
-  },
-  {
-    name: "Jul",
-    sale: 2900,
-  },
-  {
-    name: "Aug",
-    sale: 2200,
-  },
-  {
-    name: "Sep",
-    sale: 4000,
-  },
-  {
-    name: "Oct",
-    sale: 2200,
-  },
-  {
-    name: "Nov",
-    sale: 4000,
-  },
-  {
-    name: "Dec",
-    sale: 5000,
-  },
 ];
 
-export { xAxisData, newMembers, transactions, userRows, products, productsData };
+export {
+  xAxisData,
+  newMembers,
+  transactions,
+  userRows,
+  products,
+  productsData,
+};
