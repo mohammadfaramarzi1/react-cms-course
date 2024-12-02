@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import Chart from "../../components/Chart/Chart";
 import { productsData } from "../../datas";
+import PublishIcon from "@mui/icons-material/Publish"
 
 import "./Product.css";
 
@@ -67,7 +68,16 @@ function Product() {
               <option value="no">No</option>
             </select>
           </div>
-          <div className="product__form-right"></div>
+          <div className="product__form-right">
+            <div className="product__uploader">
+              <img src="/images/dell.jpg" alt="profile img" className="product__uploader-img" />
+              <label>
+                <PublishIcon />
+              </label>
+              <input type="file" style={{display: "none"}} />
+            </div>
+            <button className="product__btn">Upload</button>
+          </div>
         </form>
       </div>
     </div>
